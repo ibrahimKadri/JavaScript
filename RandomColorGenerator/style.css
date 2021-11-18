@@ -1,0 +1,23 @@
+body{
+    background-color: silver;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-color{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    letter-spacing: 2px;
+}
+.generate-btn{
+    padding: 14px 20px;
+    background-color: transparent;
+    border: 3px solid ;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
