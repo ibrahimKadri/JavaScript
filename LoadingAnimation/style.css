@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+.sword{
+    width: 250;
+    height: 30px;
+    display: flex;
+}
+.handle{
+position: relative;
+background: #777;
+height: 20px;
+width: 40px;
+border-top-left-radius:10px ;
+border-bottom-left-radius:10px ;
+outline: 2px solid black;
+}
+.handle::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 40px;
+    background: #ccc;
+    right: 0;
+    top: -10px;
+outline: 2px solid black;
+border-radius: 10px;
+
+}
+.laser{
+    animation: laserLoading 5s;
+    height: 20px;
+    width: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:lightblue;
+    box-shadow: 0 0 0 4px blue,
+                0 0 35px blue,
+                0 0 10px blue inset;
+
+}
+.count{
+    animation: countIncreasing 5s;
+}
+@keyframes countIncreasing {
+    0%{
+        
+    } 
+    100%{
+
+    }   
+}
+@keyframes laserLoading {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 200px;
+    }
+}
