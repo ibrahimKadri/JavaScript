@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#12a7f9,#008aef);
+    overflow: hidden;
+}
+.snowFlake{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-image: url('snowflake-image.svg');
+    background-size: cover;
+    border-radius: 50px;
+    animation: fall 2s linear infinite;
+}
+@keyframes fall {
+    0%{
+        transform: translate(50%,50%);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(50%,100%);
+        opacity: 0;
+    }
+}
