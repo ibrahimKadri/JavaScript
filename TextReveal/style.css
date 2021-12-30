@@ -1,0 +1,40 @@
+body{
+    background: #000;
+    color: #eee;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container p{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+p span.typed-text{
+    font-weight: normal;
+    color: #dd7732;
+}
+p span.cursor{
+    display: inline-block;
+    background: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+p span.cursor .typing{
+    animation: none;
+}
+@keyframes blink {
+    0%{background: #ccc;}
+    49%{background: #ccc;}
+    50%{background: transparent;}
+    99%{background: transparent;}
+    100%{background: #ccc;}
+
+}
