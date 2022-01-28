@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding:0 10%;
+  background:linear-gradient(90deg, #fff 60%, #eee 40.1%);
+}
+
+.container .side-bar{
+  width:400px;
+}
+
+.container .side-bar.active{
+  display: none;
+}
+
+.container .side-bar .list{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.container .side-bar .list li{
+  padding:10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+
+.container .side-bar .list li::before{
+  content: '';
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:-5px;
+  width: 0%;
+  height: 3px;
+  background-color: #000;
+  transition: width .2s linear .2s;
+}
+
+.container .side-bar .list li.active,
+.container .side-bar .list li:hover{
+  font-size: 30px;
+}
+
+.container .side-bar .list li.active::before,
+.container .side-bar .list li:hover::before{
+  right: -5px;
+  width: 105%;
+}
+
+.container .video-container{
+  flex:1;
+}
+
+.container .video-container video{
+  width: 100%;
+  object-fit: cover;
+}
+
+#menu-btn{
+  position: fixed;
+  top:20px; left:30px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width:1200px){
+  .container{
+    position: relative;
+  }
+
+  .container .side-bar{
+    position: absolute;
+    top:0; left:-110%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    padding:30px;
+  }
+
+  .container .side-bar .list{
+    height: 100%;
+    justify-content: center;
+  }
+
+  .container .side-bar.active{
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+    display: initial;
+    left:0;
+  }
+}
+
+@media (max-width:450px){
+
+  .container{
+    padding:20px;
+  }
+
+  .container .side-bar{
+    width: 300px;
+  }
+
+  .container .side-bar .list li{
+    font-size: 15px;
+  }
+
+  .container .side-bar .list li.active{
+    font-size: 20px;
+  }
+
+}
