@@ -1,0 +1,36 @@
+body{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+h3{
+    color: royalblue;
+    font-size: 26px;
+    margin-bottom: -10px;
+}
+p{
+    height: 20px;
+    text-align: center;
+    color: royalblue;
+    font-size: 18px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+}
+@media (max-width:450px) {
+    .grid{
+        width: 320px;
+        margin-right:  auto;
+        margin-left:  auto;
+    }
+}
+@media (max-width:310px) {
+    .grid{
+        width: 300px;
+    }
+}
