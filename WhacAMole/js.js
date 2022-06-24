@@ -26,7 +26,7 @@ square.forEach(id => {
 
 function moveMole() {
     let timerId = null;
-    timerId = setInterval(randomSquare,600);
+    timerId = setInterval(randomSquare,550);
 }
 function countDown() {
     currentTime--;
