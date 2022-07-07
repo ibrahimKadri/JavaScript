@@ -1,0 +1,29 @@
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+p{
+    bottom: 0;
+    position: absolute;
+    background: #5271ff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    left: 0;
+}
+button{
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px #333;
+    cursor: pointer;
+    padding: 5px 20px;
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    letter-spacing: 2px;
+}
