@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="divs-container">
+        <div class="tabContent" id="html">
+            HTML is the standard markup language for creating Web pages.
+        </div>
+        <div class="tabContent" id="css">
+            CSS is the language we use to style a Web page.
+        </div>
+        <div class="tabContent" id="javascript">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia optio incidunt enim minima nostrum! Animi, ea non quasi possimus necessitatibus sequi fugiat error aliquid illum nemo, velit natus esse. 
+        </div>
+        <div class="tabContent" id="jquery">
+            jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button class="tablink" id="defaultOpen" onclick="clickedBtn('html','5271ff',this)">HTML</button>
+        <button class="tablink" onclick="clickedBtn('css','fff',this)">CSS</button>
+        <button class="tablink" onclick="clickedBtn('javascript','5271ff',this)">JavaScript</button>
+        <button class="tablink" onclick="clickedBtn('jquery','fff',this)">JQuery</button>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

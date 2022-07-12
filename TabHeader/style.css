@@ -1,0 +1,31 @@
+body{
+    background: #ccc;
+    margin: 0;
+}
+.divs-container{
+    display: flex;
+}
+.divs-container div{
+    display: none;
+    padding: 10px;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.buttons-container{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: red;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons-container button{
+    width: 25%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    background: #eee;
+}
