@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row-1">
+            <div class="slide active">
+                <img src="img/audi.jpg">
+                <p>
+                    1 / 3 <br>
+                    AUDI
+                </p>
+            </div>
+            <div class="slide">
+                <img src="img/bmw.jpg">
+                <p>
+                    2 / 3 <br>
+                    BMW
+                </p>
+            </div>
+            <div class="slide">
+                <img src="img/merceds.jpg">
+                <p>
+                    3 / 3 <br>
+                    MERCEDS
+                </p>
+            </div>
+        </div>
+        <div class="row-2">
+            <div id="slide">
+                <img src="img/audi.jpg" class="demo" onclick="currentSlide(1)">
+            </div>
+            <div id="slide">
+                <img src="img/bmw.jpg" class="demo" onclick="currentSlide(2)">
+            </div>
+            <div id="slide">
+                <img src="img/merceds.jpg" class="demo" onclick="currentSlide(3)">
+            </div>
+        </div>
+        <div class="left-arrow" onclick="plusSlides(-1)">&#11013;</div>
+        <div class="right-arrow" onclick="plusSlides(1)">&#10145;</div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
