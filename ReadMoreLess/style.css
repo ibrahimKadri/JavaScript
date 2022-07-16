@@ -1,0 +1,32 @@
+body{
+    background: #eee;
+}
+.container{
+    width: 80%;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #222;
+    padding: 10px;
+    background: #5271ff;
+    color: #fff;
+}
+.container #text{
+    display: none;
+}
+button{
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 3px 3px 3px #222;
+    transition: .5s;
+}
+button:hover{
+    background: #fff;
+    color: #5271ff;
+}
