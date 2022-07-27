@@ -1,0 +1,32 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    outline: none;
+    user-select: none;
+}
+button{
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #5271ff;
+    color: #fff;
+    border: none;
+    box-shadow: 7px 7px 7px #222;
+    cursor: pointer;
+}
+#modal{
+    display: none;
+    width: 70vw;
+    text-align: center;
+    box-shadow: 0 0 50px #333;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+#modal #close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
