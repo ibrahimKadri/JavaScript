@@ -1,0 +1,40 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+.container{
+    width: 80vw;
+    background: #5278ff;
+    box-shadow: 3px 3px 3px #222;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+button{
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-color: #fff;
+    outline: none;
+}
+#sortBtn{
+    background: #fff;
+    color: #5278ff;
+}
+#resetBtn{
+   background: transparent;
+   color: #fff;
+}
+ul li{
+    list-style: none;
+    padding: 3px;
+    color: #fff;
+    margin-top: 5px;
+}
+ul li:nth-child(even){
+    background: #fff;
+    color: #5278ff;
+}
