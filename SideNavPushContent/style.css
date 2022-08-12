@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    gap: 10px;
+}
+.container .side-nav{
+    width: 0;
+    background: #5278ff;
+    height: 100vh;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+.side-nav{
+    transition: 1s ease;
+}
+.side-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.content{
+    margin: 10px;
+}
+.content button{
+    display: block;
+    margin: 10px 0;
+    background: #5278ff;
+    color: #fff;
+    padding: 10px 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
