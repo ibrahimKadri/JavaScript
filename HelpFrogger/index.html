@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Seconds Left: <span id="time-left">20</span></h3>
+    <h3>Result: <span id="result"></span></h3>
+    <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="ending-block">
+            X
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="log-left l1"></div>
+        <div class="log-left l2"></div>
+        <div class="log-left l3"></div>
+        <div class="log-left l4"></div>
+        <div class="log-left l5"></div>
+        <div class="log-left l1"></div>
+        <div class="log-left l2"></div>
+        <div class="log-left l3"></div>
+        <div class="log-left l4"></div>
+        <div class="log-left l5"></div>
+
+        <div class="log-right l1"></div>
+        <div class="log-right l2"></div>
+        <div class="log-right l3"></div>
+        <div class="log-right l4"></div>
+        <div class="log-right l5"></div>
+        <div class="log-right l1"></div>
+        <div class="log-right l2"></div>
+        <div class="log-right l3"></div>
+        <div class="log-right l4"></div>
+        <div class="log-right l5"></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div class="car-left c1"></div>
+        <div class="car-left c2"></div>
+        <div class="car-left c3"></div>
+        <div class="car-left c1"></div>
+        <div class="car-left c2"></div>
+        <div class="car-left c3"></div>
+        <div class="car-left c1"></div>
+        <div class="car-left c2"></div>
+        <div class="car-left c3"></div>
+
+        <div class="car-right c1"></div>
+        <div class="car-right c2"></div>
+        <div class="car-right c3"></div>
+        <div class="car-right c1"></div>
+        <div class="car-right c2"></div>
+        <div class="car-right c3"></div>
+        <div class="car-right c1"></div>
+        <div class="car-right c2"></div>
+        <div class="car-right c3"></div>
+        <div class="car-right c1"></div>
+        <div class="car-right c2"></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="starting-block">
+            X
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="btns">
+        <button id="start-pause-button">Start</button>
+        <button id="reset-button">Reset</button>
+    </div>
+    <div class="btns2">
+        <div class="above">
+            <button class="up" onclick="upArrow()">
+                &#11014;
+            </button>
+        </div>
+        <div class="below">
+            <button class="left" onclick="leftArrow()">
+                &#11013;
+            </button>
+            <button class="down" onclick="downArrow()">
+                &#11015;
+            </button>
+            <button class="right" onclick="rightArrow()">
+                &#10145
+            </button>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

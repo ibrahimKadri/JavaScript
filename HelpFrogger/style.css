@@ -1,0 +1,76 @@
+body{
+    background: rgb(245, 243, 243);
+}
+h3{
+    text-align: center;
+}
+.grid{
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(245, 182, 126);
+}
+.grid div{
+    height: 25px;
+    width: 25px;
+    /* width: 24px; */
+    /* margin: 0 1px 0 0; */
+}
+.ending-block{
+    color: red;
+    display: grid;
+    place-items: center;
+}
+.starting-block{
+    /* background: blue; */
+    color: blue;
+    display: grid;
+    place-items: center;
+}
+.l1,.l2{
+    background: brown;
+}
+.l3,.l4,.l5{
+    background: lightblue;
+}
+.c1{
+    background: black;
+    /* background-image: url('car.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99; */
+}
+.c2,.c3{
+    background: lightgrey;
+}
+button{
+    font-size: 18px;
+}
+.btns{
+    /* background: rebeccapurple; */
+    text-align: center;
+    margin-top: 20px;
+}
+.btns2{
+    text-align: center;
+    margin-top: 20px;
+}
+.btns2 .above{
+    margin-bottom: 10px;
+}
+.btns2 .below .left,.btns2 .below .down{
+    margin-right:10px;
+}
+.frog{
+    /* background: green; */
+    z-index: 100;
+    background-image: url('img/frog.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
