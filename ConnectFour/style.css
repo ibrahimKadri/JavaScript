@@ -1,0 +1,39 @@
+body{
+    display: grid;
+    place-items: center;
+}
+h2{
+    /* background-color: rebeccapurple */
+}
+.grid{
+    border: 1px solid;
+    height: 240px;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+.grid div{
+    height: 40px;
+    width: 40px;
+    /* background: blue; */
+    cursor: pointer;
+}
+.player-one{
+    background: red;
+    border-radius: 20px;
+}
+.player-two{
+    background: blue;
+    border-radius: 20px;
+}
+button{
+    font-size: 20px;
+    padding: 5px 80px;
+    background:dodgerblue;
+    color: #fff;
+    border: none;
+    box-shadow: 10px 0 10px #333;
+    cursor: pointer;
+    display: none;
+}
