@@ -1,0 +1,81 @@
+body{
+    display: grid;
+    place-items: center;
+    background-image: url(galaxy.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    user-select: none;
+}
+.grid{
+    width: 300px;
+    height: 300px;
+    border: solid #fff 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+.invader::before{
+    content: '👽';
+    font-size: 20px;
+}
+.invader{
+    /* background: purple; */
+    border-radius: 10px;
+}
+.shooter::before{
+    content: '🚀';
+    font-size: 20px;
+    transform:('10deg');
+}
+.shooter{
+    /* background: green; */
+    content: '🚀';
+    height: 20px;
+    width: 20px;
+}
+.laser::before{
+    content: '🔥';
+    font-size: 20px;
+}
+.laser{
+    /* background: orange; */
+}
+.boom{
+    background: red;
+    border-radius: 10px;
+}
+button{
+    border: none;
+}
+button#restart{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    display: none;
+}
+.controls{
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.controls .left .leftBtn{
+    margin-right: 10px;
+}
+.controls .left .leftBtn,.controls .left .rightBtn{
+    font-size: 30px;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+.controls .right button{
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}
