@@ -43,17 +43,16 @@ nav ul li:hover,
 nav i:hover{
     color: #fff;
 }
-
-@media (max-width:350px) {
-    h1,
-    nav ul li,
-    nav i{
-        font-size: 30px;
-    }  
-}
-
 p{
     font-size: 35px;
     width: 90%;
     margin: 150px auto 0 auto;
+}
+@media (max-width:350px) {
+    h1,
+    nav ul li,
+    nav i,
+    p{
+        font-size: 30px;
+    }  
 }
