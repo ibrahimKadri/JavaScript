@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    user-select: none;
+}
+header h1{
+    display: flex;
+    justify-content: space-around;
+}
+header i{
+    cursor: pointer;
+}
+nav{
+    background: #333;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: .8s;
+    position: fixed;
+}
+nav i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+nav ul {
+    display: none;
+    position: relative;
+    list-style: none;
+    text-align: center;
+    top: 25%;
+}
+nav ul li{
+    margin: 20px 0;
+}
+nav ul li,
+nav i{
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+}
+nav ul li:hover,
+nav i:hover{
+    color: #fff;
+}
+
+@media (max-width:350px) {
+    h1,
+    nav ul li,
+    nav i{
+        font-size: 30px;
+    }  
+}
+
+p{
+    font-size: 35px;
+    width: 90%;
+    margin: 150px auto 0 auto;
+}
