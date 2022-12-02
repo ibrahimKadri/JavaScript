@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>
+        Below is a modal image gallery (lightbox). Click on any image.
+    </h2>
+    <div class="image-gallery">
+        <img src="images/mountains.jpg" onclick="openModal();currentSlide(0)" class="img">
+        <img src="images/waterfall.jpg"onclick="openModal();currentSlide(1)" class="img">
+        <img src="images/river.jpg" onclick="openModal();currentSlide(2)" class="img">
+        <img src="images/sea.jpg" onclick="openModal();currentSlide(3)" class="img">
+    </div>
+    <div class="modal" id="modal">
+        <span onclick="closeModal()" id="closeBtn">&times;</span>
+        <div class="modal-content">
+            <span id="left-arrow">&#10094;</span>
+            <div class="displayedImage">
+                <span id="slideNumber"></span>
+                <img src="images/" id="modalImage">
+            </div>
+            <span id="right-arrow">&#10095;</span>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

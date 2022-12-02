@@ -1,0 +1,94 @@
+body{
+    user-select: none;
+    margin: 0;
+}
+h2{
+    width: 90%;
+    margin: 20px auto;
+}
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.image-gallery img{
+    height: 200px;
+    width: 200px;
+    margin:10px;
+    cursor: pointer;
+    filter: grayscale(.9);
+    transition: .5s;
+}
+.image-gallery img:hover{
+    filter: unset;
+}
+@media (min-width:768px) {
+    .image-gallery img{
+        filter: unset;
+    }
+}
+.modal{
+    height: 100%;
+    width: 100%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+.modal #closeBtn{
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal .modal-content{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin: 100px auto;
+    align-items: center;
+}
+.modal .modal-content .displayedImage{
+    height: 450px;
+    width: 450px;
+}
+.modal .modal-content .displayedImage img{
+    height: 100%;
+    object-fit: fill;
+    width: 100%;
+}
+@media (max-width:520px) {
+    .modal .modal-content{
+        width: 450px;
+    }
+    .modal .modal-content .displayedImage{
+        height: 400px;
+        width: 350px;
+    }
+}
+@media (max-width:460px) {
+    .modal .modal-content{
+        width: 380px;
+    }
+    .modal .modal-content .displayedImage{
+        height: 400px;
+        width: 300px;
+    }
+}
+@media (max-width:390px) {
+    .modal .modal-content{
+        width: 260px;
+    }
+    .modal .modal-content .displayedImage{
+        height: 350px;
+        width: 220px;
+    }
+}
+.modal .modal-content span{
+    color: #fff;
+    cursor: pointer;
+}
