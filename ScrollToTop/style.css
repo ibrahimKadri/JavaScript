@@ -1,0 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
+p{
+    height: 2000px;
+    font-size: 25px;
+}
+button{
+    position: fixed;
+    padding: 5px 20px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    font-size:25px;
+}
