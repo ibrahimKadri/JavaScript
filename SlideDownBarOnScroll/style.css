@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+#navbar{
+    width: 100%;
+    background: #333;
+    padding: 20px 5px;
+    position: fixed;
+    top: -70px;
+    transition: top 1s;
+}
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 5px;
+    transition: .5s;
+    font-size: 20px;
+}
+#navbar a:hover{
+    background: #ccc;
+}
+h1{
+    padding: 25px 0;
+}
+h1,p{
+    width: 90%;
+    margin: auto;
+}
+p{
+    height: 2000px;
+    font-size: 25px;
+}
