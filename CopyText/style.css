@@ -1,0 +1,25 @@
+body{
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+}
+.content{
+    width: 60%;
+    margin: auto;
+    display: grid;
+}
+.content .btn{
+    display: flex;
+    justify-content: end;
+}
+.content .btn button{
+    width: 70px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.content textarea{
+    outline: none;
+    font-size: 20px;
+    resize: vertical;
+    max-height: 300px;
+}
