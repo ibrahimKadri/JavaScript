@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>
+        Does your password match the requested format? 
+        Try to submit the form.
+    </h2>
+    <form action="#">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <label for="password">Password</label>
+        <input type="password" id="password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <button>Submit</button>
+    </form>
+    <div class="password-modal" id="password-modal">
+        <h3>Password must contain the following:</h3>
+        <p id="case-1" class="invalid">
+            <span id="check"></span>
+            A lowercase letter
+        </p>
+        <p id="case-2" class="invalid">
+            <span id="check"></span>
+            An uppercase letter
+        </p>
+        <p id="case-3" class="invalid">
+            <span id="check"></span>
+            A number
+        </p>
+        <p id="case-4" class="invalid">
+            <span id="check"></span>
+            Minimum 8 characters
+        </p>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
