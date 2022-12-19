@@ -1,0 +1,28 @@
+body{
+    background: #252525;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-size: 22px;
+}
+p{
+    color: #fff;
+}
+.box{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+input{
+    font-size: 22px;
+    outline: none;
+    padding: 10px 40px 10px 10px;
+}
+i{
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    cursor: pointer;
+}
