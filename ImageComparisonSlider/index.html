@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>
+        Drag the slider either to the right or left to view and compare products.
+    </p>
+    <div class="container">
+        <img src="img1.jpg">
+        <img src="img2.jpg" id="sec-img">
+        <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
