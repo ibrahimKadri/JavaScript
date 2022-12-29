@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+h2{
+    margin: 100px auto 20px auto;
+    width: 72%;
+}
+#collapsible{
+    background: #444;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#collapsible,
+#content{
+    font-size: 22px;
+    max-width: 800px;
+    min-width: 270px;
+    padding: 5px;
+    margin: auto;
+}
+#content{
+    background: #ccc;
+    display: none;
+}
