@@ -1,0 +1,117 @@
+*{
+    outline: none;
+    border: none;
+    background: none;
+    resize: none;
+}
+::selection{
+    background: #EF476F;
+    color: black;
+}
+::placeholder{
+    color: #FFD166;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+background: #EF476F; 
+border-radius: 10px;
+} 
+::-webkit-scrollbar-thumb:hover {
+background: #bb3051; 
+}
+textarea, button{
+    font-size: 19px;
+    padding: 5px;
+}
+button{
+    cursor: pointer;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #26547c;
+    color: #fcfcfc;
+    user-select: none;
+}
+.container{
+    border: 1px solid #EF476F;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    min-width: 240px;
+    text-align: center;
+    box-shadow: 0 0 100px #EF476F;
+}
+.container .insert-task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .insert-task-container textarea{
+    color: #FFD166;
+    border-bottom: 1px solid #EF476F;
+}
+.container .insert-task-container button{
+    cursor: pointer;
+    color: #FFD166;
+    border: 1px solid #FFD166;
+    transition: .5s ease;
+}
+.container .insert-task-container button:hover{
+    background: #FFD166;
+    color: #fcfcfc;
+}
+.container #listed-tasks{
+    display: flex;
+    flex-flow: column;
+    text-align: start;
+    gap: 4px;
+    max-height: 175px;
+    overflow-y:scroll;
+    padding-right: 2px;
+}
+.container #listed-tasks div{
+    display: flex;
+    justify-content: space-between;
+}
+.container #listed-tasks div .leftDiv{
+    max-width: 60%;
+}
+.container #listed-tasks div .rightDiv{
+    width: 40%;
+    justify-content:space-evenly;
+    align-items: center;
+    display: flex;
+}
+.container #listed-tasks div:nth-child(odd){
+    background: #FFD166;
+    color: black;
+}
+.container #listed-tasks div:nth-child(odd) button{
+    background: #06D6A0;
+    color: #fcfcfc;
+}
+.container #listed-tasks div:nth-child(even){
+    background: #06D6A0;
+    color: #fcfcfc;
+}
+.container #listed-tasks div:nth-child(even) button{
+    background: #FFD166;
+    color: black;
+}
+@media (max-width:375px) {
+    .container #listed-tasks div{
+        padding: 4px;
+    }
+    .container #listed-tasks div .rightDiv{
+        flex-flow: column;
+        gap: 4px;
+    } 
+    .container #listed-tasks div .rightDiv button{
+        width: 90%;
+    }
+}
